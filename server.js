@@ -9,3 +9,5 @@ const sequelize = require('./configure/connection');
 const routes = require('./controllers/index');
 
 const hbs = expresshbs.create({});
+
+const app = express();
