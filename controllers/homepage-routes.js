@@ -18,6 +18,10 @@ router.get('/contact-customer-service',(req,res) => (
     res.render('contact-customer-service')
 ));
 
+router.get('/admin',(req,res) => (
+    res.render('admin')
+));
+
 router.get('/user-login',(req,res) => {
     if(req.session.loggedIn){
         res.redirect('dashboard');
