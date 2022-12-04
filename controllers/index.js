@@ -1,3 +1,3 @@
 const router = require('express').Router();
 
-const homepageRoutes = 
+const homepageRoutes = require('./homepage-routes');
