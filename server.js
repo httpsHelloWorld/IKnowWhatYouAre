@@ -11,3 +11,5 @@ const routes = require('./controllers/index');
 const hbs = expresshbs.create({});
 
 const app = express();
+
+const PORT = process.env.PORT || 3000;
