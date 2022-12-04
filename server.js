@@ -17,3 +17,15 @@ const PORT = process.env.PORT || 3000;
 const expresssession = require('express-session');
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const session = {
+    secret:'secret',
+    cookie:{},
+    resave:false,
+    saveUninitialized:true,
+    store: new SequelizeStore({
+        db:sequelize,
+        checkExpirationInterval:5 * 60 * 1000,
+        expiration:5 * 60 * 1000
+    })
+};
