@@ -29,3 +29,5 @@ const session = {
         expiration:5 * 60 * 1000
     })
 };
+
+app.use(expresssession(session));
