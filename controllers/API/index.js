@@ -11,3 +11,5 @@ router.use('/link',resourceRoutes);
 router.use('/user',userRoutes);
 
 router.use('/role',roleRoutes);
+
+module.exports = router;
