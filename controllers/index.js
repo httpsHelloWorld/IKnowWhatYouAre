@@ -5,3 +5,5 @@ const homepageRoutes = require('./homepage-routes');
 const dashboardRoutes = require('./dashboard-routes');
 
 const apiRoutes = require('./API');
+
+router.use('/API',apiRoutes);
