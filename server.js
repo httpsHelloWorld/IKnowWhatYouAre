@@ -33,3 +33,5 @@ const session = {
 app.use(expresssession(session));
 
 app.use(express.json);
+
+app.use(express.urlencoded({extended:true}));
