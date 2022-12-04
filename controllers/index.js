@@ -9,3 +9,5 @@ const apiRoutes = require('./API');
 router.use('/API',apiRoutes);
 
 router.use('/',homepageRoutes);
+
+router.use('/dashboard',dashboardRoutes);
