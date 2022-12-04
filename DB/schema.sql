@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS minemarketplace;
+DROP DATABASE IF EXISTS minemarketplace_demo;
 
 CREATE DATABASE minemarketplace;
