@@ -13,3 +13,11 @@ router.get('/items',(req,res) => (
 router.get('/roles',(req,res) => (
     res.render('roles')
 ));
+
+router.get('/user-login',(req,res) => {
+    if(req.session.loggedIn){
+        res.redirect('dashboard');
+        return
+    };
+    res.render(user-login)
+});
