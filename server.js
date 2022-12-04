@@ -15,3 +15,5 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const expresssession = require('express-session');
+
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
