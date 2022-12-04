@@ -8,3 +8,5 @@ const roleRoutes = require('./role-routes');
 const { route } = require('../homepage-routes');
 
 router.use('/link',resourceRoutes);
+
+router.use('/user',userRoutes);
