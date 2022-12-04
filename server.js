@@ -7,3 +7,5 @@ const expresshbs = require('express-handlebars');
 const sequelize = require('./configure/connection');
 
 const routes = require('./controllers/index');
+
+const hbs = expresshbs.create({});
