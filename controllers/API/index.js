@@ -5,7 +5,6 @@ const resourceRoutes = require('./resource-routes');
 const userRoutes = require('./user-routes');
 
 const roleRoutes = require('./role-routes');
-const { route } = require('../homepage-routes');
 
 router.use('/link',resourceRoutes);
 
