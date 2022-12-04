@@ -27,7 +27,7 @@ router.get('/user-login',(req,res) => {
         res.redirect('dashboard');
         return
     };
-    res.render(user-login)
+    res.render('user-login')
 });
 
 module.exports = router;
