@@ -9,3 +9,7 @@ router.get('/',(req,res) => (
 router.get('/items',(req,res) => (
     res.render('items')
 ));
+
+router.get('/roles',(req,res) => (
+    res.render('roles')
+));
