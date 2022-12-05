@@ -16,4 +16,4 @@ const resourceData = [
         description:'threeResource',
         link:'xbox.com'
     }
-]; 
+];
