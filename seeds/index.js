@@ -14,3 +14,5 @@ const seedAll = async() => {
     await roleSeeds();
     await resourceSeeds();
 };
+
+seedAll();
