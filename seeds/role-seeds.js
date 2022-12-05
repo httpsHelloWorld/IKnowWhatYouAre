@@ -14,3 +14,5 @@ const roleData = [
         name:'buyer'
     }
 ];
+
+const roleSeeds = () => Role.bulkCreate(roleData);
