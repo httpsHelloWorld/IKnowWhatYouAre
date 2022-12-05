@@ -1,1 +1,1 @@
-const seedResource = 
+const userSeeds = require('./user-seeds');
