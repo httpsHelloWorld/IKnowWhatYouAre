@@ -6,3 +6,5 @@ const roleAuth = (req,res,next) => {
         next()
     }
 };
+
+module.exports = roleAuth;
