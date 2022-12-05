@@ -1,7 +1,5 @@
 
 (function() {
-    //===== Prealoder
-    
     window.onload = function () {
         window.setTimeout(fadeout, 500);
     }
@@ -10,11 +8,6 @@
         document.querySelector('.preloader').style.opacity = '0';
         document.querySelector('.preloader').style.display = 'none';
     }
-    
-    
-    /*=====================================
-    Sticky
-    ======================================= */
     window.onscroll = function () {
         var header_navbar = document.querySelector(".navbar-area");
         var sticky = header_navbar.offsetTop;
@@ -24,10 +17,6 @@
         } else {
             header_navbar.classList.remove("sticky");
         }
-
-
-
-        // show or hide the back-top-top button
         var backToTo = document.querySelector(".scroll-top");
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             backToTo.style.display = "flex";
@@ -35,9 +24,6 @@
             backToTo.style.display = "none";
         }
     };
-    
-    
-    // for menu scroll 
     var pageLink = document.querySelectorAll('.page-scroll');
     
     pageLink.forEach(elem => {
@@ -49,8 +35,6 @@
             });
         });
     });
-    
-    // section menu active
     function onScroll(event) {
         var sections = document.querySelectorAll('.page-scroll');
         var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
@@ -71,7 +55,6 @@
 
     window.document.addEventListener('scroll', onScroll);
 
-    //===== close navbar-collapse when a  clicked
     let navbarToggler = document.querySelector(".navbar-toggler");    
     var navbarCollapse = document.querySelector(".navbar-collapse");
 
@@ -83,15 +66,13 @@
     );
     navbarToggler.addEventListener('click', function() {
         navbarToggler.classList.toggle("active");
-        // navbarCollapse.classList.toggle('show')
+
     }) 
     
-    
-    // WOW active
+
     new WOW().init();
 
-    
-    //======== tiny slider for work
+
     tns({
         container: '.work_active',
         autoplay: true,
@@ -125,7 +106,6 @@
             },
         }
     });
-    //======== tiny slider for team
     tns({
         container: '.team_active',
         autoplay: true,
@@ -154,7 +134,7 @@
         }
     });
 
-    // ================ pricing tab
+
     const tabs = document.querySelectorAll('[data-tab-target]')
     const tabContents = document.querySelectorAll('[data-tab-content]')
     
