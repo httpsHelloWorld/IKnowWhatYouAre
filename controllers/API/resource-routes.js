@@ -31,3 +31,25 @@ router.post('/',withAuth,roleAuth,(req,res) => {
         res.status(400).json(err)
     })
 });
+
+router.delete('/:id',withAuth,roleAuth,(req,res) => {
+    console.log(req.body.id);
+    Resource.destroy({
+        where:{
+            id:req.params.id
+        }
+    })
+    .then(resourceDB => {
+        if(!resourceDB){
+            res.status(404).json({
+                message:'No link associated with ID.'
+            });
+            return
+        };
+        res.json(resourceDB)
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err)
+    })
+});
