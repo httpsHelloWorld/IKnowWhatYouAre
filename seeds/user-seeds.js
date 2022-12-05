@@ -17,3 +17,4 @@ const userData = [
         role_id:2
     }
 ];
+const userSeeds = () => User.bulkCreate(userData);
