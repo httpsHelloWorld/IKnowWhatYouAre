@@ -17,3 +17,5 @@ const resourceData = [
         link:'xbox.com'
     }
 ];
+
+const resourceSeeds = () => Resource.bulkCreate(resourceData);
