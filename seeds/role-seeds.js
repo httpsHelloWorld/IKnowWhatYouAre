@@ -16,3 +16,5 @@ const roleData = [
 ];
 
 const roleSeeds = () => Role.bulkCreate(roleData);
+
+module.exports = roleSeeds;
