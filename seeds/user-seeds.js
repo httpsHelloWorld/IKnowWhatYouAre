@@ -14,7 +14,7 @@ const userData = [
     {
         email:'userthree@userthreemail.com',
         password:'passwordthree',
-        role_id:2
+        role_id:3
     }
 ];
 
