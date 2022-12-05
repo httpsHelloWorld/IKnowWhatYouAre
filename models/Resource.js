@@ -32,3 +32,5 @@ Resource.init(
         modelName:'resource'
     }
 );
+
+module.exports = Resource;
