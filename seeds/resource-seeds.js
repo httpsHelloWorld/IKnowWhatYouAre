@@ -19,3 +19,5 @@ const resourceData = [
 ];
 
 const resourceSeeds = () => Resource.bulkCreate(resourceData);
+
+module.exports = resourceSeeds;
