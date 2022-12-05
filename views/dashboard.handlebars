@@ -1,0 +1,55 @@
+<div class="area"></div>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <ul class="logout">
+            <li>
+                <a href="#" id = 'logout'>
+                    <i class="fa fa-power-off fa-2x"></i>
+                    <span class="nav-text">
+                        Logout
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+{{#if admin}}
+<div class="admin-form flex justify-center">
+    <form id = 'link-form'>
+        <input type="text" id="rname" value="" placeholder="Enter Resource Name">
+        <input type="text" id="desc" value="" placeholder="Enter Resource Description">
+        <input type="url" id="link" value="" placeholder="Enter Resource Link">
+        <button type="submit" id="resource-submit" value="Submit"> Submit </button> 
+    </form>
+</div>
+{{/if}}
+
+<section class = "flex justify-center">
+    <ol>
+        {{#each resources}}
+        <li>
+            {{name}}<br/>
+            {{description}}<br/>
+            {{link}}<br/>
+            <button class = 'delete-btn' type ='submit' id = {{id}} >Delete</button>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+
+
+<script src = '/js/log-out.js'></script>
+{{#if admin}}
+<script src = 'js/delete.js'></script>
+<script src = 'js/add-link.js'></script>
+{{/if}}
